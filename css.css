@@ -13,10 +13,6 @@ align-items: center; /*выравнивает элементы по центру
 position: relative;
 }
 
-.for-contact2 {
-  display: none;
-}
-
 .header .menu  {
    background-color: black;
    width: 100%;
@@ -94,17 +90,6 @@ right: 9%;
 z-index: 2;
 top: 32px;
 }
-
-
-.for-contact2{
-  display: flex;
-  z-index: 2;
-
-}
-
-
-
-
 
 .a-contact{
     text-transform: none !important ;
@@ -308,23 +293,23 @@ text-align: center;
 }
 
 .contact{
-    display: none;
+    display: flex;
+
 
 }
+
+
+    .for-contact {
+        display: flex;
+        position: static;
+        /*right: 9%;*/
+        z-index: 2;
+        justify-content: center;
+    }
 
 .text-description{
       margin-left: 0%;
 }
-
-.for-contact2 {
-    display: flex;
-    z-index: 2;
-
-  }
-}
-
-
-
 
 }
 
