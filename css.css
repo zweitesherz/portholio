@@ -12,7 +12,9 @@
     display: none;
     width: 30px;
     height: 30px;
-    position: relative;
+    position: absolute;
+    right: 7px;
+    top: 5px;
     cursor: pointer;
 }
 
@@ -25,20 +27,25 @@
     border-radius: 9px;
     opacity: 1;
     left: 2px;
+
 }
 
+
+
 .menu__icon span:nth-child(1) {
-    top: 0px;
+    top: 0;
+
 }
 
 .menu__icon span:nth-child(2), .menu__icon span:nth-child(3) {
     top: 8px;
+
 }
 
 .menu__icon span:nth-child(3) {
     top: 16px;
-}
 
+}
 
 
 
@@ -88,7 +95,8 @@ position: relative;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 15px;
-    margin: 30px;
+    margin: 25px;
+
 }
 
 .logo {
@@ -250,13 +258,24 @@ display: flex;
 
 @media screen and (max-width: 847px) {
 
+.header .menu ul a {
+        margin:0 !important;
+    }
+
+
+
+
 
 .menu {
     display: none;
+    position: fixed;
+    z-index: 20;
 }
 
     .menu__icon {
         display: block;
+        position: fixed;
+        z-index: 30;
     }
 
 
@@ -275,7 +294,8 @@ display: flex;
     font-size: 17pt;
   }
   .header .menu {
-    padding: 0px;
+    padding-left: 0;
+    position: fixed;
   }
 
   .hallo {
@@ -287,9 +307,9 @@ display: flex;
       text-transform: uppercase;
       text-align: center;
       font-size: 18px;
-      padding-left: 0px;
+      padding-left: 0;
       vertical-align: middle;
-      padding-top: 11px;
+      padding-top: 25px;
 }
     .logo {
         display: none;
